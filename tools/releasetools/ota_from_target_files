@@ -425,29 +425,23 @@ def WriteFullOTAPackage(input_zip, output_zip):
 
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")
+  script.Print("=============================================");    
+  script.Print("               TTTTTTTTTTTTTTTTTT           ");
+  script.Print("                TTTTTTTTTTTTTTT             ");
+  script.Print("                    TTTT                    ");
+  script.Print("                   TTTT                     ");
+  script.Print("                  TTTT                      ");
+  script.Print("                 TTTT                       ");
+  script.Print("                    NNNNNNN        NNNN     ");
+  script.Print("                   NNNN NNNN      NNNN      ");
+  script.Print("                  NNNN   NNNN    NNNN       ");
+  script.Print("                 NNNN     NNNN  NNNN        ");
+  script.Print("                NNNN       NNNNNNNN         ");
+  script.Print("=============================================");
 
-  script.Print("******************************************");
-  script.Print("*    ______  _____   __  __   _____      *");
-  script.Print("*   /\\  _  \\/\\  __`\\/\\ \\/\\ \\ /\\  _ `\\    *");
-  script.Print("*   \\ \\ \\L\\ \\ \\ \\/\\ \\ \\ \\/'/'\\ \\ \\L\\ \\   *");
-  script.Print("*    \\ \\  __ \\ \\ \\ \\ \\ \\ , <  \\ \\ ,__/   *");
-  script.Print("*     \\ \\ \\/\\ \\ \\ \\_\\ \\ \\ \\\\\\`\\ \\ \\ \\/    *");
-  script.Print("*      \\ \\_\\ \\_\\ \\_____\\ \\_\\ \\_\\\\\\ \\_\\    *");
-  script.Print("*       \\/_/\\/_/\\/_____/\\/_/\\/_/ \\/_/    *");
-  script.Print("*                                        *");
-  script.Print("******************************************");
-
-  aokpv = GetBuildProp("ro.aokp.version", OPTIONS.info_dict)
-  if os.getenv("AOKP_BUILD") is not None:
-    build = ' '.join(aokpv.split('_')[3].split('-')).title()
-    script.Print("*   Version: %s"%(build));
-  elif os.getenv("AOKP_NIGHTLY") is not None:
-    build = ' '.join(aokpv.split('_')[2:]).title()
-    script.Print("*   Version: %s"%(build));
-  else:
     build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
     script.Print("******************************************");
-    script.Print("************ UNOFFICIAL BUILD ************");
+    script.Print("***** TN's Sofa King Android Project *****");
     script.Print("******************************************");
     script.Print("*   Compiled: %s"%(build));
 

@@ -313,9 +313,7 @@ ifneq (,$(user_variant))
   # Turn on Dalvik preoptimization for user builds, but only if not
   # explicitly disabled and the build is running on Linux (since host
   # Dalvik isn't built for non-Linux hosts).
-  ifeq ($(HOST_OS),linux)
-        WITH_DEXPREOPT := true
-  endif
+        WITH_DEXPREOPT := false
 
   # Disallow mock locations by default for user builds
   ADDITIONAL_DEFAULT_PROPERTIES += ro.allow.mock.location=0

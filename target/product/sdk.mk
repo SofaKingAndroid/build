@@ -24,7 +24,7 @@ PRODUCT_PACKAGES := \
 	Exchange2 \
 	FusedLocation \
 	Gallery \
-	Music \
+	Apollo \
 	Mms \
 	OpenWnn \
 	libWnnEngDic \
@@ -33,10 +33,8 @@ PRODUCT_PACKAGES := \
 	Phone \
 	PinyinIME \
 	libjni_pinyinime \
-	Protips \
 	SoftKeyboard \
 	SystemUI \
-	Launcher2 \
 	Development \
 	DevelopmentSettings \
 	DrmProvider \
